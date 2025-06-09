@@ -10,13 +10,15 @@ The analysis uses data from the **All of Us Research Program Controlled Tier Dat
 
 1. Install dependencies:
 
-  ```bash
-  pip install -r requirements.txt
+   ```bash
+   pip install -r requirements.txt
+
 
 
 2. Run the analysis:
 
-  python ndvi_dementia_analysis_pipeline.py
+   ```bash
+   python ndvi_dementia_analysis_pipeline.py
 
 ---
 
