@@ -1,55 +1,77 @@
 # NDVI & Mental Health Analysis
 
-This repository contains the full analysis pipeline examining the relationship between early adulthood green space exposure (NDVI) and later-life risk of **dementia** and **depression**.
+This repository contains the full analysis pipeline examining the relationship between early adulthood green space exposure (measured using NDVI — Normalized Difference Vegetation Index) and later-life risk of dementia and depression among older adults.
 
-The analysis uses the **All of Us Controlled Tier Dataset v8** and integrates geospatial, clinical, and behavioral data.
-
----
-
-## Contents
-
-- `ndvi_dementia_analysis_pipeline.py` — full analysis script (from raw data to figures)
-- `results/` — final figures and tables:
-  - `figure2_ndvi_dose_response_spline.pdf`
-  - `figure3_ndvi_spatial_map_fixed.pdf`
-  - `figure4_ndvi_effect_modification.pdf`
-  - `table1_ndvi_cohort.html`
-  - `table2_multivariable_logistic.csv`
-- `data/` — input files used in the pipeline (e.g. ZIP3 NDVI)
-- `ndvi_manuscript_outputs.zip` — full bundle of all outputs
+The analysis uses data from the **All of Us Research Program Controlled Tier Dataset (v8)** and integrates geospatial, clinical, and socioeconomic information. Results are summarized in figures and tables suitable for publication.
 
 ---
 
-### Spatial Mapping Shapefiles
+## How to Run
 
-Shapefiles (`three_dig_zips.*`) used for ZIP3-level NDVI mapping are not included in this repository due to size and GitHub's limitations on binary file handling.
+1. Install dependencies:
 
-You can download the full shapefile set from the following link:
+pip install -r requirements.txt
 
-**[Download shapefiles on Google Drive](https://drive.google.com/drive/folders/19BiQDEKbYPkRJN8mHImNF3-x7sN7PvQ3?usp=drive_link)**
+2. Run the analysis:
 
-This includes:
+python ndvi_dementia_analysis_pipeline.py
+
+
+Outputs will be saved in the `results/` folder.
+
+---
+
+## Key Outputs
+
+- **Figure 2** – NDVI dose–response spline
+- **Figure 3** – ZIP3-level spatial NDVI map
+- **Figure 4** – NDVI stratified by SES
+- **Smooth_Difference_by_SES.pdf** – Risk difference by SES
+- **Table 1** – NDVI cohort characteristics
+- **Table 2** – Logistic regression results
+
+---
+
+## Spatial Mapping Shapefiles
+
+Shapefiles for ZIP3 mapping are not included in this repository.
+
+Download them here:  
+[Google Drive – NDVI_Shapefiles_ZIP3](https://drive.google.com/drive/folders/19BiQDEKbYPkRJN8mHImNF3-x7sN7PvQ3?usp=drive_link)
+
+Included files:
 - `three_dig_zips.shp`
 - `three_dig_zips.shx`
 - `three_dig_zips.dbf`
 - `three_dig_zips.prj`
 
-> If you have trouble accessing the files, feel free to contact the author.
+---
+
+## Data Access
+
+This analysis used the **All of Us Controlled Tier Dataset v8**.  
+You must be an authorized researcher to access these data:  
+🔗 https://www.researchallofus.org
 
 ---
 
-## Summary of Key Findings
+## License
 
-- Higher NDVI exposure (ages 18–25) was associated with reduced risk of dementia/depression.
-- SES modifies the relationship — stronger protective effects observed in low-deprivation ZIPs.
-- A spatial ZIP3 NDVI map was generated for all participants.
+This project is licensed under the MIT License.  
+See `LICENSE` for details.
 
 ---
 
-## Reproducibility
+## Citation
 
-To run this pipeline:
+Trabilsy M*, Rosenthal DA*, Barr P.
+The Relationship Between Green Space Exposure in Early Adulthood and Neuropsychiatric Risk in Later Life: A Socioeconomically Stratified National Analysis Based on the "All of Us" Research Program.
+SUNY Downstate Medical Center.
+Authors marked with an asterisk contributed equally.
+*(Manuscript under review)*
 
-```bash
-pip install -r requirements.txt
-python ndvi_dementia_analysis_pipeline.py
+---
+
+## Contact
+
+danielr221196@gmail.com
