@@ -20,24 +20,6 @@ The analysis uses the **All of Us Controlled Tier Dataset v8** and integrates ge
 
 ---
 
-## Summary of Key Findings
-
-- Higher NDVI exposure (ages 18–25) was associated with reduced risk of dementia/depression.
-- SES modifies the relationship — stronger protective effects observed in low-deprivation ZIPs.
-- A spatial ZIP3 NDVI map was generated for all participants.
-
----
-
-## Reproducibility
-
-To run this pipeline:
-
-```bash
-pip install -r requirements.txt
-python ndvi_dementia_analysis_pipeline.py
-
----
-
 ### Spatial Mapping Shapefiles
 
 Shapefiles (`three_dig_zips.*`) used for ZIP3-level NDVI mapping are not included in this repository due to size and GitHub's limitations on binary file handling.
@@ -53,3 +35,21 @@ This includes:
 - `three_dig_zips.prj`
 
 > If you have trouble accessing the files, feel free to contact the author.
+
+---
+
+## Summary of Key Findings
+
+- Higher NDVI exposure (ages 18–25) was associated with reduced risk of dementia/depression.
+- SES modifies the relationship — stronger protective effects observed in low-deprivation ZIPs.
+- A spatial ZIP3 NDVI map was generated for all participants.
+
+---
+
+## Reproducibility
+
+To run this pipeline:
+
+```bash
+pip install -r requirements.txt
+python ndvi_dementia_analysis_pipeline.py
