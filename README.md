@@ -49,7 +49,7 @@ Included files:
 
 This analysis used the **All of Us Controlled Tier Dataset v8**.  
 You must be an authorized researcher to access these data:  
-🔗 https://www.researchallofus.org
+https://www.researchallofus.org
 
 ---
 
