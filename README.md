@@ -72,6 +72,4 @@ Authors marked with an asterisk contributed equally.
 
 ## Contact
 
-maissa.trabilsy@downstate.edu  
-daniel.rosenthal@downstate.edu  
 peter.barr@downstate.edu
