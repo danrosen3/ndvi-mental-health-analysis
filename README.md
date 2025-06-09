@@ -15,7 +15,6 @@ The analysis uses data from the **All of Us Research Program Controlled Tier Dat
 
 2. Run the analysis:
 
-```bash
 python ndvi_dementia_analysis_pipeline.py
 
 ---
