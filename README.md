@@ -35,3 +35,21 @@ To run this pipeline:
 ```bash
 pip install -r requirements.txt
 python ndvi_dementia_analysis_pipeline.py
+
+---
+
+### Spatial Mapping Shapefiles
+
+Shapefiles (`three_dig_zips.*`) used for ZIP3-level NDVI mapping are not included in this repository due to size and GitHub's limitations on binary file handling.
+
+You can download the full shapefile set from the following link:
+
+**[Download shapefiles on Google Drive](https://drive.google.com/drive/folders/19BiQDEKbYPkRJN8mHImNF3-x7sN7PvQ3?usp=drive_link)**
+
+This includes:
+- `three_dig_zips.shp`
+- `three_dig_zips.shx`
+- `three_dig_zips.dbf`
+- `three_dig_zips.prj`
+
+> If you have trouble accessing the files, feel free to contact the author.
